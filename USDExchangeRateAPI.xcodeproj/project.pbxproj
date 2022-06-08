@@ -11,6 +11,11 @@
 		7FC2304E28507B840078FFFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2304D28507B840078FFFC /* ContentView.swift */; };
 		7FC2305028507B860078FFFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC2304F28507B860078FFFC /* Assets.xcassets */; };
 		7FC2305328507B860078FFFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC2305228507B860078FFFC /* Preview Assets.xcassets */; };
+		7FC2305A28507BB60078FFFC /* ContentVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2305928507BB60078FFFC /* ContentVM.swift */; };
+		7FC2305C28507BE50078FFFC /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2305B28507BE50078FFFC /* DataService.swift */; };
+		7FC2305E28507C140078FFFC /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2305D28507C140078FFFC /* NetworkingManager.swift */; };
+		7FC2306028507C3B0078FFFC /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2305F28507C3B0078FFFC /* ExchangeRateModel.swift */; };
+		7FC2306228507C6F0078FFFC /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC2306128507C6F0078FFFC /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		7FC2304D28507B840078FFFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FC2304F28507B860078FFFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FC2305228507B860078FFFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7FC2305928507BB60078FFFC /* ContentVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentVM.swift; sourceTree = "<group>"; };
+		7FC2305B28507BE50078FFFC /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		7FC2305D28507C140078FFFC /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		7FC2305F28507C3B0078FFFC /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
+		7FC2306128507C6F0078FFFC /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		7FC2306328507CAA0078FFFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +62,15 @@
 		7FC2304A28507B840078FFFC /* USDExchangeRateAPI */ = {
 			isa = PBXGroup;
 			children = (
+				7FC2306328507CAA0078FFFC /* Info.plist */,
 				7FC2304B28507B840078FFFC /* USDExchangeRateAPIApp.swift */,
+				7FC2305F28507C3B0078FFFC /* ExchangeRateModel.swift */,
+				7FC2305D28507C140078FFFC /* NetworkingManager.swift */,
+				7FC2305B28507BE50078FFFC /* DataService.swift */,
+				7FC2305928507BB60078FFFC /* ContentVM.swift */,
 				7FC2304D28507B840078FFFC /* ContentView.swift */,
 				7FC2304F28507B860078FFFC /* Assets.xcassets */,
+				7FC2306128507C6F0078FFFC /* Date.swift */,
 				7FC2305128507B860078FFFC /* Preview Content */,
 			);
 			path = USDExchangeRateAPI;
@@ -137,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FC2305A28507BB60078FFFC /* ContentVM.swift in Sources */,
 				7FC2304E28507B840078FFFC /* ContentView.swift in Sources */,
+				7FC2306228507C6F0078FFFC /* Date.swift in Sources */,
+				7FC2306028507C3B0078FFFC /* ExchangeRateModel.swift in Sources */,
 				7FC2304C28507B840078FFFC /* USDExchangeRateAPIApp.swift in Sources */,
+				7FC2305E28507C140078FFFC /* NetworkingManager.swift in Sources */,
+				7FC2305C28507BE50078FFFC /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +292,7 @@
 				DEVELOPMENT_TEAM = JSZ2KS27AG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = USDExchangeRateAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -299,7 +321,7 @@
 				DEVELOPMENT_TEAM = JSZ2KS27AG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = USDExchangeRateAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
